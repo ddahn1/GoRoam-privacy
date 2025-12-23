@@ -28,7 +28,6 @@
   <link rel="stylesheet" href="/styles.css" />
 
   <style>
-    /* Small legal-page refinements that still match your design system */
     .legal-wrap { max-width: 980px; margin: 0 auto; }
     .legal-card { border-radius: var(--radius-md); background: rgba(15,23,42,0.9); border: 1px solid var(--border-subtle); padding: 18px; box-shadow: 0 18px 35px rgba(15,23,42,0.85); }
     .legal-card h3 { margin: 0 0 8px; font-size: 15px; }
@@ -58,7 +57,7 @@
 
       <nav class="nav" aria-label="Legal navigation">
         <div class="nav-left">
-          <a class="nav-brand" href="/about" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+          <a class="nav-brand" href="/about" aria-label="GoRoam Legal Home">
             <div class="logo-mark" aria-hidden="true">
               <img class="logo-img" src="https://approamly.com/screenshots/logo.png" alt="GoRoam" />
             </div>
@@ -69,7 +68,7 @@
           </a>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" aria-label="Legal pages">
           <a class="is-active" href="/about">About</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
@@ -107,7 +106,7 @@
             <a class="pill" href="#who">Who it’s for</a>
             <a class="pill" href="#faq">FAQ</a>
             <a class="pill" href="#contact">Contact</a>
-            <a class="pill" href="#legal">Legal</a>
+            <a class="pill" href="#legal">Policies</a>
           </div>
         </div>
       </main>
@@ -368,16 +367,17 @@
   </div>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    const y = document.getElementById("y");
+    if (y) y.textContent = new Date().getFullYear();
   </script>
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"GoRoam",
     "url":"https://legal.approamly.com",
+    "logo":"https://approamly.com/screenshots/logo.png",
     "email":"support@approamly.com",
     "contactPoint":[
       {"@type":"ContactPoint","email":"support@approamly.com","contactType":"customer support"},
@@ -387,4 +387,3 @@
   </script>
 </body>
 </html>
-
