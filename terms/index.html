@@ -41,7 +41,7 @@
 
       <nav class="nav" aria-label="Legal navigation">
         <div class="nav-left">
-          <a class="nav-brand" href="/about" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+          <a class="nav-brand" href="/about" aria-label="GoRoam Legal Home">
             <div class="logo-mark" aria-hidden="true">
               <img class="logo-img" src="https://approamly.com/screenshots/logo.png" alt="GoRoam" />
             </div>
@@ -52,7 +52,7 @@
           </a>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" aria-label="Legal pages">
           <a href="/about">About</a>
           <a href="/privacy">Privacy</a>
           <a class="is-active" href="/terms">Terms</a>
@@ -105,7 +105,59 @@
             <h2>Termination</h2>
             <p>We may suspend or terminate your access if you violate these Terms or for safety, legal, or operational reasons. You may stop using GoRoam at any time; you can request account deletion via in-app controls (if available) or by contacting support.</p>
 
-            <h2>Governing Law &amp; Dispute Resolution</h2>
-            <p>These Terms are governed by the laws of the Commonwealth of <strong>Pennsylvania</strong>, U.S.A., excluding its conflicts of law rules. You and GoRoam consent to the exclusive jurisdiction and venue of the state and federal courts located in <strong>Allegheny County, Pennsylvania</strong> (Pittsburgh), and each party waives any objection to such courts on grounds of inconvenient forum.</p>
-            <p>Either party may seek relief in small claims court for disputes within that court’s jurisdiction in <strong>Allegheny County, Pennsylvania</strong>. To the extent you are a consumer resident outside the U.S., this choice of law and forum does not deprive you of the protections of the mandatory laws of your habitual residence, and you may bring a claim in your
+            <h2>Governing Law &amp; Venue</h2>
+            <p>
+              These Terms are governed by the laws of the Commonwealth of <strong>Pennsylvania</strong>, U.S.A., excluding its conflicts of law rules.
+              You and GoRoam consent to the exclusive jurisdiction and venue of the state and federal courts located in <strong>Allegheny County, Pennsylvania</strong> (Pittsburgh),
+              and each party waives any objection to such courts on grounds of inconvenient forum.
+            </p>
 
+            <h2>Small Claims</h2>
+            <p>
+              Either party may seek relief in small claims court for disputes within that court’s jurisdiction in <strong>Allegheny County, Pennsylvania</strong>.
+              If you are a consumer resident outside the U.S., this choice of law and venue does not deprive you of protections under mandatory laws of your habitual residence,
+              and you may bring claims in your local jurisdiction where required by law.
+            </p>
+
+            <h2>Changes to These Terms</h2>
+            <p>We may update these Terms. We will post the updated Terms here with a new “Last updated” date.</p>
+
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:support@approamly.com">support@approamly.com</a></p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-row">
+          <div>© <span id="y"></span> GoRoam. All rights reserved.</div>
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/support">Support</a>
+            <a href="https://approamly.com/">Marketing site</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>
+    const y = document.getElementById("y");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"GoRoam",
+    "url":"https://legal.approamly.com",
+    "logo":"https://approamly.com/screenshots/logo.png",
+    "email":"support@approamly.com"
+  }
+  </script>
+</body>
+</html>
