@@ -41,7 +41,7 @@
 
       <nav class="nav" aria-label="Legal navigation">
         <div class="nav-left">
-          <a class="nav-brand" href="/about" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+          <a class="nav-brand" href="/about" aria-label="GoRoam Legal Home">
             <div class="logo-mark" aria-hidden="true">
               <img class="logo-img" src="https://approamly.com/screenshots/logo.png" alt="GoRoam" />
             </div>
@@ -52,7 +52,7 @@
           </a>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links" aria-label="Legal pages">
           <a href="/about">About</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">Terms</a>
@@ -121,7 +121,10 @@
     </div>
   </div>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    const y = document.getElementById("y");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
 
   <script type="application/ld+json">
   {
