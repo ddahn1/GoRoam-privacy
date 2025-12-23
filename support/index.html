@@ -41,5 +41,97 @@
 
       <nav class="nav" aria-label="Legal navigation">
         <div class="nav-left">
-          <a class="nav-brand" href="/about" style="text-decoration:none; display:flex; align-items:center; gap:10px
+          <a class="nav-brand" href="/about" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+            <div class="logo-mark" aria-hidden="true">
+              <img class="logo-img" src="https://approamly.com/screenshots/logo.png" alt="GoRoam" />
+            </div>
+            <div class="logo-wordmark">
+              <div class="logo-title">GoRoam</div>
+              <div class="logo-subtitle">Legal</div>
+            </div>
+          </a>
+        </div>
 
+        <div class="nav-links">
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a class="is-active" href="/support">Support</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="btn-ghost" href="https://approamly.com/"><span>Back</span> Site</a>
+          <a class="btn-primary" href="mailto:support@approamly.com?subject=GoRoam%20Support">Email support</a>
+        </div>
+      </nav>
+
+      <main class="section" style="border-top:none; padding-top:34px;">
+        <div class="legal-wrap">
+          <div class="section-header">
+            <div class="section-kicker">Support</div>
+            <h1 class="section-title section-title-large">GoRoam Support</h1>
+            <p class="section-lead">Questions or need help? Email us at <a href="mailto:support@approamly.com">support@approamly.com</a>.</p>
+            <p class="legal-meta">We typically respond within 2–3 business days.</p>
+          </div>
+
+          <div class="split">
+            <div class="legal-card">
+              <h2 style="margin:0 0 8px; font-size:16px;">Report a Problem</h2>
+              <ol class="list">
+                <li>Describe what you were doing and what went wrong.</li>
+                <li>Include screenshots if possible and your app version (Settings → About).</li>
+                <li>Mention device model and OS version.</li>
+              </ol>
+              <p style="margin-top:10px;">
+                For privacy requests (access/delete data), include <em>“Privacy Request”</em> in the subject line
+                or see our <a href="/privacy">Privacy Policy</a>.
+              </p>
+            </div>
+
+            <div class="legal-card">
+              <h2 style="margin:0 0 8px; font-size:16px;">Business &amp; Partnerships</h2>
+              <p>Email: <a href="mailto:GoRoam@approamly.com?subject=GoRoam%20Business%20Inquiry">GoRoam@approamly.com</a></p>
+
+              <div style="margin-top:14px;">
+                <h2 style="margin:0 0 8px; font-size:16px;">Quick Links</h2>
+                <ul class="list">
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/privacy">Privacy Policy</a></li>
+                  <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-row">
+          <div>© <span id="y"></span> GoRoam. All rights reserved.</div>
+          <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+            <a href="/support">Support</a>
+            <a href="https://approamly.com/">Marketing site</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"GoRoam",
+    "url":"https://legal.approamly.com",
+    "logo":"https://approamly.com/screenshots/logo.png",
+    "email":"support@approamly.com"
+  }
+  </script>
+</body>
+</html>
