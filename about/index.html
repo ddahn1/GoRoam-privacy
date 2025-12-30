@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="GoRoam helps you find better places faster—discover nearby gems, share quick photo reviews, and save favorites, with simple privacy controls when you want them." />
   <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#a855ff" />
+  <meta name="theme-color" content="#6366f1" />
   <link rel="canonical" href="https://legal.approamly.com/about" />
 
   <!-- OG -->
@@ -30,26 +30,22 @@
   <link rel="stylesheet" href="/styles.css" />
 
   <style>
-    .legal-wrap { max-width: 980px; margin: 0 auto; }
-    .legal-card { border-radius: var(--radius-md); background: rgba(15,23,42,0.9); border: 1px solid var(--border-subtle); padding: 18px; box-shadow: 0 18px 35px rgba(15,23,42,0.85); }
-    .legal-card h3 { margin: 0 0 8px; font-size: 15px; }
-    .legal-card p, .legal-card li { color: var(--text-muted); font-size: 13px; }
-    .legal-card a { text-decoration: underline; }
-    .legal-kicker { font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; color: rgba(192,181,217,0.7); }
-    .legal-h1 { font-size: clamp(26px, 4.8vw, 38px); line-height: 1.1; letter-spacing: -0.03em; margin-top: 8px; }
-    .legal-sub { color: var(--text-muted); margin-top: 10px; max-width: 64ch; }
-    .toc { display:flex; flex-wrap:wrap; gap:10px; margin-top: 14px; }
+    .legal-card h3 { margin: 0 0 12px; font-size: 20px; font-weight: 700; letter-spacing: -0.02em; color: var(--text-main); }
+    .legal-kicker { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-subtle); font-weight: 600; }
+    .legal-h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.2; letter-spacing: -0.03em; margin-top: 12px; font-weight: 700; color: var(--text-main); }
+    .legal-sub { color: var(--text-muted); margin-top: 16px; max-width: 64ch; font-size: 18px; line-height: 1.7; }
+    .toc { display:flex; flex-wrap:wrap; gap:12px; margin-top: 24px; }
     .toc a { text-decoration: none; }
-    .pill { display:inline-flex; align-items:center; gap:8px; padding: 7px 12px; border-radius: 999px; border: 1px solid rgba(148,163,184,0.45); background: rgba(15,23,42,0.85); color: var(--text-muted); font-size: 12px; }
-    .pill:hover { border-color: rgba(248,250,252,0.7); color: #e5e7eb; background: rgba(15,23,42,0.95); }
-    .legal-meta { margin-top: 10px; color: var(--text-muted); font-size: 12px; }
-    .legal-grid-2 { display:grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .legal-grid-3 { display:grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pill { display:inline-flex; align-items:center; gap:8px; padding: 10px 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: var(--bg-elevated); color: var(--text-muted); font-size: 14px; transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1); }
+    .pill:hover { border-color: var(--border-soft); color: var(--text-main); background: rgba(18, 18, 26, 0.9); }
+    .legal-meta { margin-top: 16px; color: var(--text-subtle); font-size: 14px; }
+    .legal-grid-2 { display:grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .legal-grid-3 { display:grid; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
     @media (max-width: 720px){ .legal-grid-2, .legal-grid-3 { grid-template-columns: 1fr; } }
-    details { border: 1px solid rgba(148,163,184,0.35); border-radius: 14px; background: rgba(15,23,42,0.85); padding: 12px 14px; }
-    details + details { margin-top: 10px; }
-    summary { cursor:pointer; font-weight: 600; }
-    .list { margin: 10px 0 0 18px; }
+    details { border: 1px solid var(--border-subtle); border-radius: var(--radius-md); background: var(--bg-elevated); padding: 20px; transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+    details:hover { border-color: var(--border-soft); }
+    details + details { margin-top: 16px; }
+    summary { cursor:pointer; font-weight: 600; color: var(--text-main); font-size: 16px; }
   </style>
 </head>
 
